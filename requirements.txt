@@ -1,0 +1,7 @@
+Django==3.2
+django-debug-toolbar==3.2.1
+django-redis==4.12.1
+redis==3.5.3
+sqlparse==0.4.1
+gunicorn==20.1.0
+redis-py-cluster== 2.1.2

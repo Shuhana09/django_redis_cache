@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-redis-deployment
+  labels:
+    app: django-redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django-redis
+  template:
+    metadata:
+      labels:
+        app: django-redis
+    spec:
+      containers:
+        - image: asawq/django-redis
+          imagePullPolicy: Always
+          name: monitor
+          ports:
+            - containerPort: 8000
+      restartPolicy: Always
