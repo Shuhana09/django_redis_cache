@@ -1,4 +1,4 @@
-#Set up redis cluster
+# Set up redis cluster
 
 ```
 cd k8s
